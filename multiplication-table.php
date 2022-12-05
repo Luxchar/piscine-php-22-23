@@ -2,7 +2,7 @@
 $number = 9;
 $i = 1;
 while ($i <= 10) {
-    echo "$number x $i = " . $number * $i . "\n";
+    echo "$i x $number = " . $number * $i . "\n";
     $i++;
 }
 ?>
