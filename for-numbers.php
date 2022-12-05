@@ -4,13 +4,8 @@ for ($i = 2; $i < 100; $i++) {
         if ($i % $j == 0) {
             $isPrime = false;
             break;
-        } elseif ($i == 97) {
-            echo $i;
-        } 
-        else {
-            echo $i . ", ";
-            break;
-        }
+        } elseif ($i == 97) { echo $i;} 
+        else { echo $i . ", "; break; }
     }
 }
 ?>
