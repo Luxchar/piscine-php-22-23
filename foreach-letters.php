@@ -1,6 +1,6 @@
 <?php
 $alphabet = range('A', 'Z');
 foreach ($alphabet as $letter) {
-    echo $letter . ' | ';
-}
+    if ($letter != 'Z') {echo $letter . ' | ';}
+    else { echo $letter;}}
 ?>
