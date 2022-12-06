@@ -10,6 +10,7 @@ function breakLines(string $string, int $length): string
     }
     foreach ($array as $word) {
         if ($count + strlen($word) > $length) {
+            substr($newString, 0, -1);
             $newString .= PHP_EOL;
             $count = 0;
         }
