@@ -1,12 +1,13 @@
 <?php
-for ($i = 2; $i < 98; $i++) {
+for ($i = 2; $i < 100; $i++) {
+    $isPrime = true;
     for ($j = 2; $j < $i; $j++) {
-        if ($i % 2 == 0) {
+        if ($i % $j == 0) {
             $isPrime = false;
             break;
-        } 
-        elseif ($i == 97) { echo $i; break;} 
-        else { echo $i . ", "; break; }
+        }
     }
+    if ($isPrime && $i <97) {echo $i . ', ';} 
+    else if ($isPrime && $i == 97) {echo $i;}
 }
 ?>
