@@ -13,7 +13,10 @@ function upperCaseFirst(string $string): string
 }
 function lowerCaseFirst(string $string): string
 {
-    return lcfirst($string);
+    $array = explode(' ', $string);
+    for ($i = 0; $i < count($array); $i++) {
+        $array[$i] = lcfirst($array[$i]);
+    }
 }
 function removeBlankSpace(string $string): string
 {
