@@ -1,4 +1,3 @@
-
 <?php
 function breakLines(string $string, int $length): string
 {
@@ -11,12 +10,11 @@ function breakLines(string $string, int $length): string
     }
     foreach ($array as $word) {
         if ($count + strlen($word) > $length) {
-            $newString .= '\n';
+            $newString .= PHP_EOL;
             $count = 0;
-
         }
         $newString .= $word . ' ';
-        $count += strlen($word)+1;
+        $count += strlen($word) + 1;
     }
     return trim($newString);
 }
