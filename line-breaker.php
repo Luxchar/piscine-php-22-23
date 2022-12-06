@@ -6,16 +6,17 @@ function breakLines(string $string, int $length): string
     $array = explode(' ', $string);
     $newString = '';
     $count = 0;
-    if (strlen($string) > $length) {
+    if (strlen($string) < $length) {
         return $string;
     }
     foreach ($array as $word) {
         if ($count + strlen($word) > $length) {
             $newString .= '\n';
             $count = 0;
+
         }
         $newString .= $word . ' ';
-        $count += strlen($word) + 1;
+        $count += strlen($word)+1;
     }
     return trim($newString);
 }
