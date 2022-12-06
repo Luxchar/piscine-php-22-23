@@ -21,8 +21,8 @@ function lowerCaseFirst(string $string): string
 }
 function removeBlankSpace(string $string): string
 {
-    $string = str_replace('  ', '', $string); 
     $string = str_replace('   ', '', $string); 
+    $string = str_replace('  ', '', $string); 
     if($string[strlen($string)-1] == " "){
         $string = substr($string, 0, -1);
     }
