@@ -21,6 +21,6 @@ function lowerCaseFirst(string $string): string
 }
 function removeBlankSpace(string $string): string
 {
-    return preg_replace('/\s+/', '', $string);
+    return str_replace(' ', '', $string); 
 }
 ?>
